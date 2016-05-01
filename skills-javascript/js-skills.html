@@ -74,17 +74,8 @@
 
 <img src="http://cdn.meme.am/instances/500x/58307737.jpg">
 
-
-
-
-
-
 <h2>Plain Javacript</h2>
 <p>You may not use jQuery for this section!</p>
-
-
-
-
 
 <h3>Making an Event Handler</h3>
 <p>
@@ -97,7 +88,13 @@
 </fieldset>
 
 <script>
-  // code here for above problem
+  var popup = document.getElementById('popup-alert-button');
+
+  function showPopup(evt) {
+    alert("Here's a popup!");
+  }
+
+  popup.addEventListener('click', showPopup);
 </script>
 
 
@@ -115,7 +112,13 @@
 </fieldset>
 
 <script>
-  // code here for above-problem
+  var message = document.getElementById('message-to-change');
+
+  function changeMessage(evt) {
+    message.innerText = "goodbye";
+    console.dir(evt);
+  }
+  message.addEventListener('click', changeMessage);
 </script>
 
 <div class="hint">
