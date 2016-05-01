@@ -148,7 +148,14 @@
 </fieldset>
 
 <script>
-  // code here for above problem
+  var form = document.getElementById('prevent-form-submission-form');
+
+  function noSubmit(evt) {
+    alert("Don't EVER click submit!");
+    evt.preventDefault();
+  }
+
+  form.addEventListener('submit', noSubmit);
 </script>
 
 <div class="hint">
