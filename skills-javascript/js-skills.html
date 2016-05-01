@@ -251,7 +251,9 @@
 </fieldset>
 
 <script>
-  // put your code here
+  $('#kittenz-rule').dblclick(function(evt){
+    $('#kittenz-rule').attr('src', 'https://s-media-cache-ak0.pinimg.com/736x/91/e5/db/91e5dbcf7139cd1c3e05795d1b4ede87.jpg');
+  });
 </script>
 
 <div class="hint">
@@ -278,13 +280,16 @@
 </ul>
 
 <fieldset>
-  <img src="http://mytrial.typepad.com/.a/6a0147e199a17d970b0153906b3209970b-pi"
+  <!--Changed image because the initial one was a hedgehog, not a porcupine-->
+  <img src="http://wac.450f.edgecastcdn.net/80450F/q103albany.com/files/2014/01/Porcupine-Walking-credit-iStock-177703348-630x416.jpg"
       id="cute-porcupine-image" style="display: none">
   <input type="button" id="make-a-porcupine" value="I Want a Porcupine!">
 </fieldset>
 
 <script>
-  // put your code here
+  $('#make-a-porcupine').click(function(){
+    $('#cute-porcupine-image').fadeIn(3000).delay(1000);
+  });
 </script>
 
 <div class="hint">
