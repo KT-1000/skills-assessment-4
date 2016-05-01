@@ -113,12 +113,13 @@
 
 <script>
   var message = document.getElementById('message-to-change');
+  var button = document.getElementById('change-hello-to-goodbye-button');
 
   function changeMessage(evt) {
-    message.innerText = "goodbye";
+    message.innerHTML = "goodbye";
     console.dir(evt);
   }
-  message.addEventListener('click', changeMessage);
+  button.addEventListener('click', changeMessage);
 </script>
 
 <div class="hint">
